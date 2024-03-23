@@ -1,0 +1,50 @@
+[
+  {
+    "clientId": 2,
+    "roomId": 2,
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "bookingDate": "2021-04-13",
+    "quotaUsed": 5
+  },
+  {
+    "clientId": 2,
+    "roomId": 2,
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "bookingDate": "2021-04-13",
+    "quotaUsed": 5
+  },
+  {
+    "clientId": 1,
+    "roomId": 2,
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "bookingDate": "2024-03-21",
+    "quotaUsed": 5
+  },
+  {
+    "clientId": 1,
+    "roomId": 2,
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "bookingDate": "2021-04-15",
+    "quotaUsed": 6
+  },
+  {
+    "clientId": 2,
+    "roomId": 3,
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "bookingDate": "2021-04-13",
+    "quotaUsed": 5
+  },
+  {
+    "clientId": 1,
+    "roomId": 3,
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "bookingDate": "2021-04-13",
+    "quotaUsed": 5
+  }
+]

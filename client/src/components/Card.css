@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  /* font-family: "Bungee", sans-serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  /* font-family: "Open Sans", sans-serif; */
+  font-weight: 300;
+}
+
+.row {
+  max-width: 100%;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  float: left;
+  padding: 0 1.7rem;
+  width: 450px;
+}
+
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card .menu-content::before,
+.card .menu-content::after {
+  content: "";
+  display: table;
+}
+
+.card .menu-content::after {
+  clear: both;
+}
+
+.card .menu-content li {
+  display: inline-block;
+}
+
+.card .menu-content a {
+  color: #fff;
+}
+
+.card .menu-content span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  transform: translate(-50%, 0);
+}
+
+.card .wrapper,
+.card .wrapper2,
+.card .wrapper3 {
+  background-color: #fff;
+  min-height: 540px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.card .wrapper2:hover .data {
+  transform: translateY(0);
+}
+
+.card .wrapper3:hover .data {
+  transform: translateY(0);
+}
+
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(70px + 1em));
+  transition: transform 0.3s;
+}
+
+.card .data .content {
+  padding: 2em 1em 0 1em;
+  position: relative;
+  z-index: 1;
+}
+.wrapper-content {
+  padding: 0 1em 1em 1em;
+}
+/* .wrapper-content::after {
+  padding: 0 1em 1em 1em;
+} */
+.card .room {
+  font-size: 30px;
+  color: rgb(55, 65, 81);
+}
+.price {
+  font-family: "Patua One", serif;
+  font-size: 12px;
+}
+.price:nth-child(2) {
+  font-family: "Patua One", serif;
+  color: rgba(171, 18, 82, 1);
+  font-size: 20px;
+}
+.card .title {
+  margin-top: 10px;
+}
+
+.card .text {
+  height: 50px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+}
+
+.progress-bar {
+  width: 80%;
+  /* Atur lebar menjadi 80% untuk progress 80% */
+  height: 30px;
+  background-color: #4caf50;
+  line-height: 30px;
+  color: white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.progress-text {
+  position: absolute;
+  width: 100%;
+  padding: 6px;
+  z-index: 2;
+  color: white;
+  font-weight: 900;
+}
+
+.card input[type="checkbox"] {
+  display: none;
+}
+
+.card input[type="checkbox"]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+.example-2 {
+  /* margin-bottom: 20px; */
+  font-family: "Bungee", sans-serif !important;
+}
+.example-2 .wrapper {
+  /* background: url("https://voffice.co.id/storage/RUANG%20MEETING/CENTENNIAL/1827%20-%205%20-%20Conference%20Room%20-%20242%20(1).jpeg")
+    center/cover no-repeat; */
+  position: relative;
+}
+
+.example-2 .wrapper::before {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.example-2 .wrapper:hover .menu-content span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.example-2 .menu-content {
+  float: right;
+}
+
+.example-2 .menu-content li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.example-2 .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.example-2 .data {
+  color: rgb(55, 65, 81);
+  transform: translateY(calc(70px + 2.1em));
+  font-weight: 900;
+}
+
+.example-2 .title a {
+  color: rgb(62, 4, 28);
+  font-weight: 900;
+}
+
+.example-2 .button {
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 15px;
+  color: rgba(171, 18, 82, 1);
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+}
+
+.example-2 .button::after {
+  content: "➦";
+  color: rgb(242, 6, 104);
+  font-size: larger;
+  opacity: 0;
+  position: absolute;
+  right: 10;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+
+.example-2 .button:hover::after {
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+.book-now {
+  color: rgb(242, 6, 104);
+}

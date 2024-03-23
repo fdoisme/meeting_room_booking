@@ -1,0 +1,17 @@
+[
+  {
+    "roomName": "Conference Room",
+    "costPerHour": 5,
+    "imgURL": "https://voffice.co.id/storage/RUANG%20MEETING/CENTENNIAL/1827%20-%205%20-%20Conference%20Room%20-%20242%20(1).jpeg"
+  },
+  {
+    "roomName": "Discussion Room",
+    "costPerHour": 1,
+    "imgURL": "https://voffice.co.id/storage/img/GALERI/PIK/Lounge-PIK.jpg"
+  },
+  {
+    "roomName": "Event Space",
+    "costPerHour": 10,
+    "imgURL": "https://voffice.co.id/storage/img/GALERI/Centennial/Event-Space-Centennial.jpg"
+  }
+]
