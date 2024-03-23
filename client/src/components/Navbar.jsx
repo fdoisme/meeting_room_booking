@@ -69,13 +69,14 @@ export default function Navabar() {
             </div>
             <div className="hidden sm:ml-6 sm:block top-[50%]  right-0 -translate-y-2/4 absolute">
               <div className="flex space-x-4">
-                <NavLink
-                  onClick={logoutHandle}
-                  style={activeNav}
-                  className="active text-pink-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                >
-                  <p className="text-xl">Logout</p>
-                </NavLink>
+                {localStorage.access_token && (
+                  <NavLink
+                    onClick={logoutHandle}
+                    className="active text-pink-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    <p className="text-xl">Logout</p>
+                  </NavLink>
+                )}
               </div>
             </div>
           </div>
