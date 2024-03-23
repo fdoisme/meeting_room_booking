@@ -16,6 +16,7 @@ function navigationGuardRestricted() {
   return null;
 }
 function navigationGuardForAdmin() {
+  if (!localStorage.access_token) return redirect("/login");
   if (localStorage.role != "admin") {
     return redirect("/forbidden");
   }

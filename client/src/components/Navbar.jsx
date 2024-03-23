@@ -1,9 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 export default function Navabar() {
+  const navigate = useNavigate();
   const menu = ["Login", "Register", "Home", "Admin"];
   function activeNav({ isActive }) {
     return isActive ? { color: "white", backgroundColor: "#374151" } : {};
+  }
+  function logoutHandle() {
+    localStorage.clear();
+    navigate("/");
   }
   return (
     <nav className="bg-white fixed w-full z-50">
@@ -59,6 +64,17 @@ export default function Navabar() {
                   to={"/admin"}
                 >
                   <p className="text-xl">Admin</p>
+                </NavLink>
+              </div>
+            </div>
+            <div className="hidden sm:ml-6 sm:block top-[50%]  right-0 -translate-y-2/4 absolute">
+              <div className="flex space-x-4">
+                <NavLink
+                  onClick={logoutHandle}
+                  style={activeNav}
+                  className="active text-pink-800 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >
+                  <p className="text-xl">Logout</p>
                 </NavLink>
               </div>
             </div>
